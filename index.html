@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>W95font</title>
+    <meta name="description" content="W95font">
+    <link rel="canonical" href="https://w95font.com">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+    <link href="assets/css/css.css?ver=22.11.15a" rel="stylesheet">
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@graph": [
+                {
+                    "@type": "Person",
+                    "url": "https://sava.io",
+                    "name": "Alle Sava",
+                    "sameAs": [
+                        "https://github.com/allesava/",
+                        "https://codepen.io/AlleSava",
+                        "https://stackoverflow.com/users/11091803/alle",
+                        "https://polywork.com/alle",
+                        "https://www.linkedin.com/in/allesava/",
+                        "https://unsplash.com/@allesava",
+                        "https://twitter.com/alle_sava",
+                        "https://www.buymeacoffee.com/allesava",
+                        "https://ko-fi.com/allesava"
+                    ],
+                    "hasOccupation": [
+                        {
+                            "@type": "Occupation",
+                            "name": "Web Designer and Frontend Developer",
+                            "skills": [
+                                "SCSS",
+                                "CSS",
+                                "HTML",
+                                "Adobe Illustrator",
+                                "Adobe Photoshop",
+                                "Adobe XD",
+                                "Javascript",
+                                "WordPress",
+                                "Logo design",
+                                "FontSelf"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "@type": "WebSite",
+                    "@id": "https://w95font.com",
+                    "url": "https://w95font.com",
+                    "name": "w95font.com",
+                    "publisher": "Alle Sava"
+                },
+                {
+                    "@type": "WebPage",
+                    "url": "https://w95font.com",
+                    "inLanguage": "en-US",
+                    "about": "W95font",
+                    "description": ""
+                }
+            ],
+            "hasPart": [
+                {
+                    "@context": "http://schema.org/",
+                    "@type": "WPHeader",
+                    "@id": "#header",
+                    "cssSelector": "#header"
+                },
+                {
+                    "@context": "http://schema.org/",
+                    "@type": "WPFooter",
+                    "cssSelector": "#footer",
+                    "@id": "#footer",
+                    "copyrightHolder": "Alle (Alina) Sava",
+                    "publisher": "Alle (Alina) Sava",
+                    "copyrightYear": "2022"
+                }
+            ],
+            "@type": "CreativeWork",
+            "name": "w95font",
+            "author": {
+                "@type": "Person",
+                "name": "Alle Sava",
+                "url": "https://sava.io",
+                "datePublished": "2021-04-25",
+                "description": "Modern scalable revival of MS Sans Serif, the Windows 95 font.",
+                "keywords": "Font design, font creation, pixel font"
+            }
+        }
+    </script>
+</head>
+<body>
+<header id="header">
+    <div id="w95start">W95font</div>
+    <div id="by">by Alle Sava [ <a href="https://sava.io/" class="external">sava.io</a> ]</div>
+    <div></div>
+    <div id="w95clock" onload="showTime()"></div>
+</header>
+
+<main>
+    <section class="wndw" data-title="About">
+        <div class="inner">
+            <p>Revival of the default Windows 95 font (MS Sans Serif). MS Sans Serif was a proportional
+                raster font, but W95font is a modern scalable .otf.</p>
+
+            <a href="#" class="btn">Download W95font [ COMING SOON ]</a>
+
+            <h2>License</h2>
+            <p>Free for both personal and commercial use, licensed under
+                <a href="https://en.wikipedia.org/wiki/SIL_Open_Font_License" class="external">SIL Open Font License (OFL)</a>.</p>
+
+            <h3>Technical Details</h3>
+            <p>Drawn as pixel art in Illustrator and exported with FontSelf.</p>
+
+            <h4>Privacy Policy</h4>
+            <p>W95font.com does NOT use cookies or tracking. Only non-personally identifiable info sent by your browser is used for
+                <a href="https://simpleanalytics.com/?referral=alina" class="external" target="_blank" rel="noopener">visits analysis</a>
+                (browser version, OS, referrer URL, time).</p>
+        </div>
+    </section>
+</main>
+
+<script async defer src="https://sava.w95font.com/latest.js"></script>
+<noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" /></noscript>
+<script type="application/javascript">
+    function showTime(){
+        var date = new Date();
+        var h = date.getHours(); // 0 - 23
+        var m = date.getMinutes(); // 0 - 59
+        var s = date.getSeconds(); // 0 - 59
+        var session = "AM";
+
+        if(h == 0){
+            h = 12;
+        }
+
+        if(h > 12){
+            h = h - 12;
+            session = "PM";
+        }
+
+        h = (h < 10) ? "0" + h : h;
+        m = (m < 10) ? "0" + m : m;
+        s = (s < 10) ? "0" + s : s;
+
+        var time = h + ":" + m + session;
+        document.getElementById("w95clock").innerText = time;
+        document.getElementById("w95clock").textContent = time;
+
+        setTimeout(showTime, 1000);
+
+    }
+
+    showTime();
+</script>
+</body>
+</html>
